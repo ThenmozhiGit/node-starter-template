@@ -6,8 +6,8 @@ dotenv.config({ path: './config/.env' });
 
 const app = express();
 
-app.get('/', (req, res) => {
-	res.status(200).json({ success: true, data: { id: 1 } });
+app.get('/api/v1/crud', (req, res) => {
+	res.status(200).json({ success: true, msg: `Show all api` });
 });
 
 const PORT = process.env.PORT || 5000;
