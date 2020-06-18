@@ -1,0 +1,19 @@
+{
+  "name": "starter-template",
+  "version": "1.0.0",
+  "description": "Starter template for express app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThenmozhiGit/node-starter-template.git"
+  },
+  "author": "Thenmozhi Poyyamozhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThenmozhiGit/node-starter-template/issues"
+  },
+  "homepage": "https://github.com/ThenmozhiGit/node-starter-template#readme"
+}
