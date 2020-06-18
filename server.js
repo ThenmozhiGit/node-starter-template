@@ -7,7 +7,7 @@ dotenv.config({ path: './config/.env' });
 const app = express();
 
 app.get('/', (req, res) => {
-	res.send({ msg: 'Hello from Server' });
+	res.status(200).json({ success: true, data: { id: 1 } });
 });
 
 const PORT = process.env.PORT || 5000;
