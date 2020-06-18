@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ThenmozhiGit/node-starter-template/issues"
   },
-  "homepage": "https://github.com/ThenmozhiGit/node-starter-template#readme"
+  "homepage": "https://github.com/ThenmozhiGit/node-starter-template#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
 }
