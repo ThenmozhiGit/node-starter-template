@@ -1,20 +1,14 @@
 const express = require(`express`);
 const router = express.Router();
+const {
+	getObjects,
+	getObject,
+	createObject,
+	updateObject,
+	deleteObject,
+} = require('../controllers/crud.controller');
 
-router.get('/', (req, res) => {
-	res.status(200).json({ success: true, msg: `Show all api` });
-});
-
-router.post('/', (req, res) => {
-	res.status(200).json({ success: true, msg: `Create new` });
-});
-
-router.put('/:id', (req, res) => {
-	res.status(200).json({ success: true, msg: `Update ${req.params.id}` });
-});
-
-router.delete('/:id', (req, res) => {
-	res.status(200).json({ success: true, msg: `Delete ${req.params.id}` });
-});
+router.route('/').get(getObjects).post(createObject);
+router.route('/:id').get(getObject).put(updateObject).delete(deleteObject);
 
 module.exports = router;
